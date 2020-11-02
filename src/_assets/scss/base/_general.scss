@@ -1,0 +1,42 @@
+@charset "utf-8";
+
+.clearfix {
+  @include clearfix();
+}
+
+.container {
+  @include cwLayout();
+}
+
+.low-mv {
+  height: 280px;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: left top;
+  background-size: 100% auto;
+  @media screen and (max-width: 1400px) {
+    background-attachment: fixed;
+    background-size: 100% auto;
+  }
+  h1 {
+    display: block;
+    padding-top: 170px;
+    font-family: 'Noto Serif JP', serif;
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    color: #fff;
+  }
+  &.about {
+    background-image: url(../images/about-mv.jpg);
+  }
+  &.lesson {
+    background-image: url(../images/lesson-mv.jpg);
+  }
+  &.contact {
+    background-image: url(../images/contact-mv.jpg);
+  }
+  &.activity {
+    background-image: url(../images/activity-mv.jpg);
+  }
+}

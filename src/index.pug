@@ -1,0 +1,148 @@
+doctype html
+html(lang="ja")
+  head
+    meta(charset="utf-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="description", content="")
+    meta(name="keywords", content="")
+    title お料理サロン エリズテーブルアンドキッチン
+    link(href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP&display=swap" rel="stylesheet")
+    link(rel="stylesheet", href="./_assets/css/style.css")
+  body.top
+    header#header
+      .logo
+        a(href="../")
+          img(src="../_assets/images/header-logo.png" alt="お料理サロン Eri’s table & kitchen エリズテーブルアンドキッチン")
+      nav
+        ul
+          li.current
+            a(href="../")
+              |HOME
+          li
+            a(href="../about/")
+              |ABOUT
+          li
+            a(href="../lesson/")
+              |LESSON
+          li
+            a(href="../contact/")
+              |CONTACT
+    #wrapper.wrapper
+      .top-mv
+        .inner-sd-top
+          .inner-sd-bottom
+            .top-header
+              .sns-links
+                .link
+                  a(href="")
+                    img(src="_assets/images/ico-header-ig.png" alt="Instagram")
+                .link
+                  a(href="")
+                    img(src="_assets/images/ico-header-blog.png" alt="Webéchat")
+              nav
+                ul
+                  li.current
+                    a(href="/")
+                      |HOME
+                  li
+                    a(href="about/")
+                      |ABOUT
+                  li
+                    a(href="lesson/")
+                      |LESSON
+                  li
+                    a(href="contact/")
+                      |CONTACT
+            #animation_container
+              canvas#top_mv_canvas
+              #dom_overlay_container
+            .mv-message
+              |おもてなし料理とテーブルコーディネートを
+              br
+              |湘南の風を感じながら楽しく学びませんか？
+      .top-news
+        .inner
+          dl
+            dt 2020.10.01　営業休止中のお知らせ
+            dd 新型コロナウイルス感染症対策として、Eri’s table & kitchenでは現在、営業活動を一時休止しております。再開の日程が決まりましたらこちらのHPにてご連絡させていただきますので、よろしくお願いいたします。
+          .link
+            a(href="")
+              |一覧へ
+      .top-message
+        .inner
+          h2
+            img(src="_assets/images/top-message-tit.svg" alt="MESSAGE")
+            span ご挨拶
+          h3 ちょっとの工夫で食卓を笑顔に
+          p
+            |はじめまして♪
+            br
+            |湘南の海風を感じる自宅サロンにて、お料理とテーブルスタイリングの教室
+            br
+            |『Eri's table & kitchen』を主宰しています。
+            br
+            |「ちょっとの工夫で食卓を笑顔に♪」をモットーに、季節に合わせた手に入り易い食材やテーブル小物を使って、ひと手間加えるだけでワンランクUPした日常の食卓を再現して頂けるように、簡単で楽しいレッスンを行っています。
+            br
+            |お一人様で参加してくださる方もいらっしゃいますので、是非お気軽にご参加ください。
+          .button-link
+            a(href="about/")
+              |プロフィール
+      .top-lesson
+        h2
+          img(src="_assets/images/top-lesson-tit.svg" alt="LESSON")
+          span レッスンについて
+        .top-lesson-slider
+          .slider__inner
+            .slider__item
+              img(src="_assets/images/top-lesson-pic1.jpg" alt="")
+            .slider__item
+              img(src="_assets/images/top-lesson-pic2.jpg" alt="")
+            .slider__item
+              img(src="_assets/images/top-lesson-pic3.jpg" alt="")
+            .slider__item
+              img(src="_assets/images/top-lesson-pic4.jpg" alt="")
+            .slider__item
+              img(src="_assets/images/top-lesson-pic5.jpg" alt="")
+            .slider__item
+              img(src="_assets/images/top-lesson-pic6.jpg" alt="")
+        .button-link
+          a(href="lesson/")
+            |レッスンについて
+      .top-information
+        .inner
+          h2
+            img(src="_assets/images/top-information-tit.svg" alt="INFORMATION")
+            span インフォメーション
+          .top-info-wrap
+            .top-instagram
+            .top-info
+              h3
+                img(src="_assets/images/top-information-logo.png" alt="お料理サロン Eri’s table & kitchen エリズテーブルアンドキッチン")
+              h4 《アクセス》
+              p
+                |江ノ電『鵠沼駅』徒歩8分
+                br
+                |※詳しい所在地はお問い合せ時にお伝えさせていただきます。
+            .button-link
+              a(href="" target="_blank")
+                |インスタグラム
+      footer
+        .footer-contact#footer-contact
+          .inner
+            p
+              |レッスンのご予約、お問い合せはこちら
+            .footer-contact-link-wrap
+              .fcl-button.l2
+                a(href="tel:090-7254-3397")
+                  span.no Tel. 090-7254-3397
+                  span.note  受付時間　10：00〜19：00【月曜〜金曜】
+              .fcl-button
+                a(href="contact/")
+                  |お問い合せフォーム
+        .copyright
+          p Copyright © Eri’s table & kitchen  All rights reserved.
+    script(src="./_assets/js/createjs.min.js")
+    script(src="./_assets/js/top-anim.js")
+    script(src="./_assets/js/jquery-3.5.1.min.js")
+    script(src="./_assets/js/script.js")
