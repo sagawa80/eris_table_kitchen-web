@@ -36,7 +36,7 @@ header {
         a {
           position: relative;
           display: block;
-          font-family: 'Noto Serif JP', serif;
+          font-family: 'MS P明朝','ヒラギノ明朝','Times', serif;
           font-size: 1.8rem;
           line-height: 1;
           transition: all .3s ease;
@@ -69,4 +69,8 @@ header {
       }
     }
   }
+}
+
+_:-ms-lang(x)::backdrop, header {
+  min-width: 100%;
 }

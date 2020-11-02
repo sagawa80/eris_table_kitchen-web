@@ -121,7 +121,7 @@ body {
               a {
                 position: relative;
                 display: block;
-                font-family: 'Noto Serif JP', serif;
+                font-family: 'MS P明朝','ヒラギノ明朝','Times', serif;
                 font-size: 1.8rem;
                 line-height: 1;
                 transition: all .3s ease;
@@ -282,15 +282,20 @@ body {
         .slider__inner {
           display: flex;
           padding-left: 20px;
+          flex-shrink: 0;
           .slider__item {
             width: 280px;
             margin-right: 10px;
             margin-left: 10px;
+            flex-shrink: 0;
             &:first-child {
               margin-left: 0;
             }
             &:last-child {
               margin-right: 0;
+            }
+            img {
+              width: 100% !important;
             }
           }
           &:first-child {
@@ -457,4 +462,16 @@ body {
   width:300px;
   height:300px;
   pointer-events:none;
+}
+
+_:lang(x)::-ms-, .top-mv {
+  min-height: 780px;
+}
+
+_:lang(x)::-ms-, .inner-sd-top {
+  min-height: 780px;
+}
+
+_:lang(x)::-ms-, .inner-sd-bottom {
+  min-height: 780px;
 }
