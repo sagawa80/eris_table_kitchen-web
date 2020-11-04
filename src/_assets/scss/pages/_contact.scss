@@ -15,7 +15,8 @@
     }
     span {
       display: block;
-      font-family: 'Noto Serif JP', serif;
+      margin-top: 10px;
+      font-family: "游明朝", YuMincho, "Hiragino Mincho ProN W3", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
       font-size: 1.4rem;
       font-weight: bold;
       color: #4ace90;
@@ -70,6 +71,13 @@
           margin-left: 10px;
         }
         &.sex {
+          margin-left: 10px;
+        }
+        &.sex-note {
+          margin-left: 20px;
+          color: #06b6b5;
+        }
+        &.sex-note {
           margin-left: 10px;
           color: #06b6b5;
         }
