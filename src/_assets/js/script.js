@@ -170,7 +170,7 @@ $(function () {
     var img_url = $(this).children('img').attr('src');
     var tag_str = '<img src="' + img_url + '">';
     $('.pic_detail .pic-wrap').html(tag_str);
-    $('.pic_detail').show();
+    /*$('.pic_detail').show();*/
     current_scroll_top = $(window).scrollTop();
     if (!$('body').hasClass('onpicdetail')) {
       $('body').addClass('onpicdetail');
@@ -179,14 +179,14 @@ $(function () {
   });
 
   $('.pic_detail .close').on('click', function () {
-    $('.pic_detail').hide();
+    /*$('.pic_detail').hide();*/
     if ($('body').hasClass('onpicdetail')) {
       $('body').removeClass('onpicdetail');
     }
   });
 
   $('.pic_detail').on('click', function () {
-    $('.pic_detail').hide();
+    /*$('.pic_detail').hide();*/
     if ($('body').hasClass('onpicdetail')) {
       $('body').removeClass('onpicdetail');
     }
