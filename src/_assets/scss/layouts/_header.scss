@@ -6,7 +6,6 @@ header {
   top: 0;
   left: 0;
   width: 100%;
-  min-width: 1400px;
   height: 90px;
   transform-origin: 0 0;
   background-color: rgba(255,255,255,0.8);
@@ -33,6 +32,12 @@ header {
       li {
         display: inline-block;
         margin-left: 40px;
+        @media screen and (max-width: 1060px) {
+          margin-left: 20px;
+        }
+        @media screen and (max-width: 850px) {
+          margin-left: 15px;
+        }
         a {
           position: relative;
           display: block;
@@ -42,6 +47,12 @@ header {
           transition: all .3s ease;
           letter-spacing: 0.1em;
           color: #161518;
+          @media screen and (max-width: 900px) {
+            font-size: 1.6rem;
+          }
+          @media screen and (max-width: 850px) {
+            font-size: 1.4rem;
+          }
           &:after {
             content: "";
             position: absolute;
@@ -72,5 +83,5 @@ header {
 }
 
 _:-ms-lang(x)::backdrop, header {
-  min-width: 100%;
+  //min-width: 100%;
 }

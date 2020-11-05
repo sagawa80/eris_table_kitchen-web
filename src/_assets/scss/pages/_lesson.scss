@@ -4,26 +4,42 @@
   .inner {
     padding-top: 45px;
     padding-bottom: 90px;
+    @media screen and (max-width: 1420px) {
+      padding-top: 3vw;
+      padding-bottom: 6vw;
+    }
   }
   h2 {
     margin-bottom: 50px;
     text-align: center;
+    @media screen and (max-width: 1420px) {
+      margin-bottom: 3.3vw;
+    }
     img {
       width: 334px;
       height: auto;
+      @media screen and (max-width: 1420px) {
+        width: 22.2vw;
+      }
     }
     span {
       display: block;
-      font-family: "游明朝", YuMincho, "Hiragino Mincho ProN W3", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+      font-family: "游明朝", "YuMincho", "Hiragino Mincho ProN W3", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
       font-size: 1.4rem;
       font-weight: bold;
       color: #4ace90;
+      @media screen and (max-width: 1160px) {
+        font-size: 1.2rem;
+      }
     }
   }
   .lesson-fee-desc {
     margin-bottom: 45px;
     text-align: center;
     color: #06b6b5;
+    @media screen and (max-width: 1420px) {
+      margin-bottom: 3vw;
+    }
   }
   .fee-note {
     font-size: 1.4rem;
@@ -39,6 +55,10 @@
       margin-bottom: 35px;
       background-color: #f7f7f7;
       justify-content: space-between;
+      @media screen and (max-width: 1420px) {
+        height: 10vw;
+        margin-bottom: 2.3vw;
+      }
       .fee-title {
         position: relative;
         width: 200px;
@@ -48,17 +68,33 @@
         opacity: 0.8;
         color: #fff;
         background-color: rgb(6, 182, 181);
+        @media screen and (max-width: 1420px) {
+          width: 13.3vw;
+          height: 10vw;
+          margin-top: -1vw;
+          margin-left: 1vw;
+        }
         h3 {
           padding-top: 50px;
           font-size: 1.8rem;
           font-weight: bold;
           line-height: 1;
           text-align: center;
+          @media screen and (max-width: 1420px) {
+            padding-top: 3.3vw;
+            font-size: 1.4rem;
+          }
+          @media screen and (max-width: 1420px) {
+            font-size: 1.2rem;
+          }
           span {
             display: block;
             margin-top: 20px;
             font-family: serif;
             font-weight: normal;
+            @media screen and (max-width: 1420px) {
+              margin-top: 1.3vw;
+            }
           }
         }
       }
@@ -68,10 +104,17 @@
         color: #36c3c2;
         justify-content: space-between;
         align-items: center;
+        @media screen and (max-width: 1420px) {
+          width: 63.6vw;
+        }
         .fee-desc {
           width: 700px;
           font-weight: bold;
           line-height: 2.4;
+          @media screen and (max-width: 1420px) {
+            width: 46.6vw;
+            font-size: 1.4rem;
+          }
           span {
             display: block;
             font-weight: normal;
@@ -85,9 +128,28 @@
           font-weight: bold;
           line-height: 105px;
           border-left: solid 2px #36c3c2;
+          @media screen and (max-width: 1420px) {
+            height: 7vw;
+            padding-right: 3.3vw;
+            padding-left: 3vw;
+            font-size: 1.6rem;
+            line-height: 7vw;
+          }
+          @media screen and (max-width: 1300px) {
+            font-size: 1.4rem;
+          }
+          @media screen and (max-width: 1200px) {
+            font-size: 1.2rem;
+          }
           span {
             font-size: 1.4rem;
             font-weight: normal;
+            @media screen and (max-width: 1300px) {
+              font-size: 1.2rem;
+            }
+            @media screen and (max-width: 1200px) {
+              font-size: 1rem;
+            }
           }
         }
       }
@@ -100,24 +162,40 @@
   .inner {
     padding-top: 60px;
     padding-bottom: 100px;
+    @media screen and (max-width: 1420px) {
+      padding-top: 4vw;
+      padding-bottom: 6.6vw;
+    }
   }
   h2 {
     margin-bottom: 50px;
     text-align: center;
+    @media screen and (max-width: 1420px) {
+      margin-bottom: 3.3vw;
+    }
     img {
       width: 260px;
       height: auto;
+      @media screen and (max-width: 1420px) {
+        width: 17.3vw;
+      }
     }
     span {
       display: block;
-      font-family: "游明朝", YuMincho, "Hiragino Mincho ProN W3", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+      font-family: "游明朝", "YuMincho", "Hiragino Mincho ProN W3", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
       font-size: 1.4rem;
       font-weight: bold;
       color: #4ace90;
+      @media screen and (max-width: 1160px) {
+        font-size: 1.2rem;
+      }
     }
   }
   .activity-links-list {
     margin-left: -25px;
+    @media screen and (max-width: 1420px) {
+      margin-left: -1.6vw;
+    }
     &:after {
       content: "";
       display: block;
@@ -129,6 +207,11 @@
       width: 382px;
       margin-bottom: 25px;
       margin-left: 25px;
+      @media screen and (max-width: 1420px) {
+        width: 25.4vw;
+        margin-bottom: 1.6vw;
+        margin-left: 1.6vw;
+      }
       a {
         position: relative;
         display: block;
@@ -151,6 +234,16 @@
           opacity: 0.8;
           color: #fff;
           background-color: rgb(6, 182, 181);
+          @media screen and (max-width: 1420px) {
+            padding-left: 1vw;
+            line-height: 3.3vw;
+          }
+          @media screen and (max-width: 1160px) {
+            font-size: 1.4rem;
+          }
+          @media screen and (max-width: 1000px) {
+            font-size: 1.2rem;
+          }
         }
         &:hover {
           img {
@@ -169,20 +262,33 @@
   .inner {
     padding-top: 65px;
     padding-bottom: 100px;
+    @media screen and (max-width: 1420px) {
+      padding-top: 4.3vw;
+      padding-bottom: 6.6vw;
+    }
   }
   h2 {
     margin-bottom: 60px;
     text-align: center;
+    @media screen and (max-width: 1420px) {
+      margin-bottom: 4vw;
+    }
     img {
       width: 260px;
       height: auto;
+      @media screen and (max-width: 1420px) {
+        width: 17.3vw;
+      }
     }
     span {
       display: block;
-      font-family: "游明朝", YuMincho, "Hiragino Mincho ProN W3", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+      font-family: "游明朝", "YuMincho", "Hiragino Mincho ProN W3", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
       font-size: 1.4rem;
       font-weight: bold;
       color: #4ace90;
+      @media screen and (max-width: 1160px) {
+        font-size: 1.2rem;
+      }
     }
   }
   h3 {
@@ -193,11 +299,26 @@
     line-height: 60px;
     color: #fff;
     background-color: #06b6b5;
+    @media screen and (max-width: 1420px) {
+      margin-bottom: 1.3vw;
+      padding-left: 1.2vw;
+      line-height: 4vw;
+    }
+    @media screen and (max-width: 1200px) {
+      font-size: 1.6rem;
+    }
   }
   .pics-note {
     padding-top: 7px;
     padding-bottom: 30px;
     font-size: 1.4rem;
+    @media screen and (max-width: 1420px) {
+      padding-top: 0.4vw;
+      padding-bottom: 2vw;
+    }
+    @media screen and (max-width: 1200px) {
+      font-size: 1.2rem;
+    }
   }
   .pics-wrap {
     display: flex;
@@ -205,10 +326,18 @@
     flex-wrap: wrap;
     justify-content: flex-start;
     margin-left: -18px;
+    @media screen and (max-width: 1420px) {
+      margin-left: -1.2vw;
+    }
     .pic {
       width: 225px;
       margin-bottom: 18px;
       margin-left: 18px;
+      @media screen and (max-width: 1420px) {
+        width: 15vw;
+        margin-bottom: 1.2vw;
+        margin-left: 1.2vw;
+      }
     }
     & + h4 {
       margin-top: 10px;
@@ -221,6 +350,13 @@
     font-size: 1.7rem;
     font-weight: bold;
     color: #06b6b5;
+    @media screen and (max-width: 1420px) {
+      margin-bottom: 1vw;
+      padding-left: 1.8vw;
+    }
+    @media screen and (max-width: 1200px) {
+      font-size: 1.5rem;
+    }
     &::before {
       content: "";
       position: absolute;
@@ -230,6 +366,49 @@
       width: 21px;
       height: 1px;
       background-color: #06b6b5;
+      @media screen and (max-width: 1420px) {
+        top: 0.9vw;
+        width: 1.4vw;
+      }
     }
   }
+}
+
+.pic_detail {
+  position: fixed;
+  z-index: 9998;
+  top: 0;
+  left: 0;
+  display: none;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0,0,0,0.8);
+  .close {
+    position: absolute;
+    z-index: 10;
+    top: 50px;
+    left: 50%;
+    width: 27px;
+    height: 27px;
+    cursor: pointer;
+    transform: translateX(-50%);
+  }
+  .pic-wrap {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    img {
+      width: 380px;
+    }
+  }
+}
+
+.ig_btn_c {
+  fill: #fff;
 }

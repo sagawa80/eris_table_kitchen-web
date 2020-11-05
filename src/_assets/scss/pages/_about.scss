@@ -8,30 +8,50 @@
     background-repeat: no-repeat;
     background-position: right bottom;
     background-size: 327px auto;
+    @media screen and (max-width: 1420px) {
+      padding-top: 4vw;
+      padding-bottom: 5.6vw;
+      background-size: 21.8vw auto;
+    }
   }
   h2 {
     margin-bottom: 55px;
     text-align: center;
+    @media screen and (max-width: 1420px) {
+      margin-bottom: 3.6vw;
+    }
     img {
       width: 274px;
       height: auto;
+      @media screen and (max-width: 1420px) {
+        width: 18.2vw;
+      }
     }
     span {
       display: block;
-      font-family: "游明朝", YuMincho, "Hiragino Mincho ProN W3", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+      font-family: "游明朝", "YuMincho", "Hiragino Mincho ProN W3", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
       font-size: 1.4rem;
       font-weight: bold;
       color: #4ace90;
+      @media screen and (max-width: 1160px) {
+        font-size: 1.2rem;
+      }
     }
   }
   h3 {
     position: relative;
     margin-bottom: 30px;
-    font-family: "游明朝", YuMincho, "Hiragino Mincho ProN W3", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+    font-family: "游明朝", "YuMincho", "Hiragino Mincho ProN W3", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
     font-size: 3.9rem;
     font-weight: bold;
     line-height: 1;
     color: #00b7b8;
+    @media screen and (max-width: 1280px) {
+      font-size: 3.5rem;
+    }
+    @media screen and (max-width: 1160px) {
+      font-size: 3.2rem;
+    }
     &:before {
       content: "";
       position: absolute;
@@ -41,14 +61,24 @@
       width: 65px;
       height: 1px;
       background-color: #00b7b8;
+      @media screen and (max-width: 1160px) {
+        left: -40px;
+        width: 40px;
+      }
     }
   }
   p {
     width: 68%;
     line-height: 2.6;
+    @media screen and (max-width: 1160px) {
+      font-size: 1.4rem;
+    }
   }
   .button-link {
     margin-top: 30px;
+    @media screen and (max-width: 1420px) {
+      margin-top: 2vw;
+    }
   }
 }
 
@@ -57,20 +87,33 @@
   .inner {
     padding-top: 75px;
     padding-bottom: 90px;
+    @media screen and (max-width: 1420px) {
+      padding-top: 5vw;
+      padding-bottom: 6vw;
+    }
   }
   h2 {
     margin-bottom: 55px;
     text-align: center;
+    @media screen and (max-width: 1420px) {
+      margin-bottom: 3.6vw;
+    }
     img {
       width: 225px;
       height: auto;
+      @media screen and (max-width: 1420px) {
+        width: 15vw;
+      }
     }
     span {
       display: block;
-      font-family: "游明朝", YuMincho, "Hiragino Mincho ProN W3", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+      font-family: "游明朝", "YuMincho", "Hiragino Mincho ProN W3", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
       font-size: 1.4rem;
       font-weight: bold;
       color: #4ace90;
+      @media screen and (max-width: 1160px) {
+        font-size: 1.2rem;
+      }
     }
   }
   .profile-content {
@@ -82,12 +125,20 @@
       z-index: 1;
       width: 457px;
       height: 395px;
+      @media screen and (max-width: 1420px) {
+        width: 30.4vw;
+        height: 26.3vw;
+      }
       span {
         position: relative;
         z-index: 2;
         left: -75px;
         display: block;
         width: 532px;
+        @media screen and (max-width: 1420px) {
+          left: -5vw;
+          width: 35.4vw;
+        }
       }
       &:after {
         content: "";
@@ -98,22 +149,37 @@
         width: 200px;
         height: 200px;
         background-image: linear-gradient( 20deg, rgb(121,193,194) 1%, rgb(161,217,151) 53%, rgb(201,240,107) 81%, rgb(255,243,118) 100%);
+        @media screen and (max-width: 1420px) {
+          right: -5.4vw;
+          bottom: -2.4vw;
+          width: 13.3vw;
+          height: 13.3vw;
+        }
       }
     }
     .profile-data {
       position: relative;
       z-index: 5;
       width: 708px;
+      @media screen and (max-width: 1420px) {
+        width: 47.2vw;
+      }
       .name {
         margin-bottom: 20px;
-        font-family: "游明朝", YuMincho, "Hiragino Mincho ProN W3", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+        font-family: "游明朝", "YuMincho", "Hiragino Mincho ProN W3", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
         font-size: 2.7rem;
         font-weight: bold;
         color: #03b5b5;
+        @media screen and (max-width: 1160px) {
+          font-size: 2.2rem;
+        }
         span {
           display: inline-block;
           margin-left: 10px;
           font-size: 2.4rem;
+          @media screen and (max-width: 1160px) {
+            font-size: 1.9rem;
+          }
         }
       }
       .data {
@@ -123,14 +189,23 @@
         line-height: 2;
         color: #06b6b5;
         border-left: solid 2px #06b6b5;
+        @media screen and (max-width: 1160px) {
+          font-size: 1.4rem;
+        }
       }
       p {
         line-height: 2.6;
+        @media screen and (max-width: 1160px) {
+          font-size: 1.4rem;
+        }
       }
     }
   }
   .actual-results {
     padding-top: 55px;
+    @media screen and (max-width: 1420px) {
+      padding-top: 3.6vw;
+    }
     .result-wrap {
       position: relative;
       display: flex;
@@ -139,6 +214,10 @@
       margin-bottom: 35px;
       background-color: #fff;
       justify-content: space-between;
+      @media screen and (max-width: 1420px) {
+        height: 10vw;
+        margin-bottom: 2.3vw;
+      }
       .result-title {
         position: relative;
         width: 200px;
@@ -148,17 +227,30 @@
         opacity: 0.8;
         color: #fff;
         background-color: rgb(6, 182, 181);
+        @media screen and (max-width: 1420px) {
+          width: 13.3vw;
+          height: 10vw;
+          margin-top: -1vw;
+          margin-left: 1vw;
+        }
         h3 {
           padding-top: 50px;
           font-size: 1.8rem;
           font-weight: bold;
           line-height: 1;
           text-align: center;
+          @media screen and (max-width: 1420px) {
+            padding-top: 3.3vw;
+            font-size: 1.4rem;
+          }
           span {
             display: block;
             margin-top: 20px;
             font-family: serif;
             font-weight: normal;
+            @media screen and (max-width: 1420px) {
+              margin-top: 1.3vw;
+            }
           }
         }
       }
@@ -167,6 +259,9 @@
         width: 955px;
         justify-content: flex-start;
         align-items: center;
+        @media screen and (max-width: 1420px) {
+          width: 63.6vw;
+        }
         .data-content {
           display: flex;
           justify-content: flex-start;
@@ -175,6 +270,13 @@
             line-height: 2;
             list-style: disc;
             color: #38c5c4;
+            @media screen and (max-width: 1420px) {
+              font-size: 1.4rem;
+            }
+            @media screen and (max-width: 1160px) {
+              padding-right: 20px;
+              font-size: 1.2rem;
+            }
             & + ul {
               margin-left: 20px;
             }

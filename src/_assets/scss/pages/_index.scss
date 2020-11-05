@@ -13,14 +13,16 @@ body {
     }
     .top-mv {
       position: relative;
-      height: 85vh;
+      height: 100vh;
+      min-height: 800px;
       background-image: url(../images/top-mv.jpg);
       background-repeat: no-repeat;
       background-position: center bottom;
       background-size: cover;
       .inner-sd-top {
         position: relative;
-        height: 85vh;
+        height: 100vh;
+        min-height: 800px;
         background-image: url(../images/top-mv-sd-top.png);
         background-repeat: no-repeat;
         background-position: center top;
@@ -28,7 +30,8 @@ body {
       }
       .inner-sd-bottom {
         position: relative;
-        height: 85vh;
+        height: 100vh;
+        min-height: 800px;
         background-image: url(../images/top-mv-sd-bottom.png);
         background-repeat: no-repeat;
         background-position: center bottom;
@@ -57,7 +60,7 @@ body {
               animation-name: top_mv_ico;
               animation-duration: .3s;
               animation-timing-function: ease-in;
-              animation-delay: 1s;
+              animation-delay: 3s;
               animation-iteration-count: 1;
               animation-direction: normal;
               animation-fill-mode: forwards;
@@ -66,7 +69,7 @@ body {
                 animation-name: top_mv_fade;
                 animation-duration: .5s;
                 animation-timing-function: linear;
-                animation-delay: 1.5s;
+                animation-delay: 2.5s;
                 animation-iteration-count: 1;
                 animation-direction: normal;
                 opacity: 0;
@@ -78,14 +81,14 @@ body {
               animation-name: top_mv_ico;
               animation-duration: .3s;
               animation-timing-function: ease-in;
-              animation-delay: 2s;
+              animation-delay: 3.5s;
               animation-iteration-count: 1;
               animation-direction: normal;
               animation-fill-mode: forwards;
               img {
                 width: 57px;
                 animation-name: top_mv_fade;
-                animation-duration: .3s;
+                animation-duration: .5s;
                 animation-timing-function: ease-out;
                 animation-delay: 2.5s;
                 animation-iteration-count: 1;
@@ -118,6 +121,12 @@ body {
             li {
               display: inline-block;
               margin-left: 40px;
+              @media screen and (max-width: 1060px) {
+                margin-left: 20px;
+              }
+              @media screen and (max-width: 850px) {
+                margin-left: 15px;
+              }
               a {
                 position: relative;
                 display: block;
@@ -127,6 +136,12 @@ body {
                 transition: all .3s ease;
                 letter-spacing: 0.1em;
                 color: #fff;
+                @media screen and (max-width: 900px) {
+                  font-size: 1.6rem;
+                }
+                @media screen and (max-width: 850px) {
+                  font-size: 1.4rem;
+                }
                 &:after {
                   content: "";
                   position: absolute;
@@ -159,19 +174,22 @@ body {
         position: absolute;
         bottom: 12vh;
         width: 100%;
-        font-family: "游明朝", YuMincho, "Hiragino Mincho ProN W3", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+        font-family: "游明朝", "YuMincho", "Hiragino Mincho ProN W3", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
         font-size: 3.8rem;
         animation-name: top_mv_fade;
-        animation-duration: .5s;
-        animation-timing-function: ease-in;
+        animation-duration: .8s;
+        animation-timing-function: ease-out;
         animation-delay: 3.5s;
         animation-iteration-count: 1;
         animation-direction: normal;
         text-align: center;
         opacity: 0;
         color: #fff;
-        text-shadow: rgba(0,0,0,0.5) 0 0 6px;
+        text-shadow: rgba(0,0,0,0.9) 0 0 8px;
         animation-fill-mode: forwards;
+        @media screen and (max-width: 1160px) {
+          font-size: 3rem;
+        }
       }
     }
     .top-news {
@@ -182,6 +200,9 @@ body {
       }
       dl {
         line-height: 2.6;
+        @media screen and (max-width: 1160px) {
+          font-size: 1.4rem;
+        }
         dt {
           font-weight: bold;
         }
@@ -213,32 +234,53 @@ body {
         background-repeat: no-repeat;
         background-position: right bottom;
         background-size: 327px auto;
+        @media screen and (max-width: 1420px) {
+          padding-top: 4.6vw;
+          padding-bottom: 6.6vw;
+          background-size: 21.8vw auto;
+        }
       }
       h2 {
         position: absolute;
         top: -35px;
         right: -70px;
         text-align: right;
+        @media screen and (max-width: 1420px) {
+          top: -2.3vw;
+          right: -4.6vw;
+        }
         img {
           width: 273px;
           height: auto;
+          @media screen and (max-width: 1420px) {
+            width: 18.2vw;
+          }
         }
         span {
           display: block;
-          font-family: "游明朝", YuMincho, "Hiragino Mincho ProN W3", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+          font-family: "游明朝", "YuMincho", "Hiragino Mincho ProN W3", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
           font-size: 1.4rem;
           font-weight: bold;
           color: #4ace90;
+          @media screen and (max-width: 1160px) {
+            font-size: 1.2rem;
+          }
         }
       }
       h3 {
         position: relative;
         margin-bottom: 20px;
-        font-family: "游明朝", YuMincho, "Hiragino Mincho ProN W3", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+        font-family: "游明朝", "YuMincho", "Hiragino Mincho ProN W3", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
         font-size: 3.9rem;
         font-weight: bold;
         line-height: 1;
         color: #00b7b8;
+        @media screen and (max-width: 1280px) {
+          font-size: 3.5rem;
+        }
+        @media screen and (max-width: 1160px) {
+          font-size: 3.2rem;
+        }
         &:before {
           content: "";
           position: absolute;
@@ -248,11 +290,18 @@ body {
           width: 65px;
           height: 1px;
           background-color: #00b7b8;
+          @media screen and (max-width: 1160px) {
+            left: -40px;
+            width: 40px;
+          }
         }
       }
       p {
         width: 68%;
         line-height: 2.6;
+        @media screen and (max-width: 1160px) {
+          font-size: 1.4rem;
+        }
       }
       .button-link {
         margin-top: 30px;
@@ -261,20 +310,30 @@ body {
     .top-lesson {
       padding-top: 65px;
       padding-bottom: 100px;
+      @media screen and (max-width: 1420px) {
+        padding-top: 4.3vw;
+        padding-bottom: 6.6vw;
+      }
       h2 {
         margin-bottom: 50px;
         text-align: center;
         img {
           width: 228px;
           height: auto;
+          @media screen and (max-width: 1420px) {
+            width: 15.2vw;
+          }
         }
         span {
           display: block;
           margin-top: 10px;
-          font-family: "游明朝", YuMincho, "Hiragino Mincho ProN W3", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+          font-family: "游明朝", "YuMincho", "Hiragino Mincho ProN W3", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
           font-size: 1.4rem;
           font-weight: bold;
           color: #4ace90;
+          @media screen and (max-width: 1160px) {
+            font-size: 1.2rem;
+          }
         }
       }
       .top-lesson-slider {
@@ -289,6 +348,9 @@ body {
             margin-right: 10px;
             margin-left: 10px;
             flex-shrink: 0;
+            @media screen and (max-width: 1420px) {
+              width: 18.6vw;
+            }
             &:first-child {
               margin-left: 0;
             }
@@ -319,6 +381,10 @@ body {
       .inner {
         padding-top: 160px;
         padding-bottom: 140px;
+        @media screen and (max-width: 1420px) {
+          padding-top: 10.6vw;
+          padding-bottom: 9.3vw;
+        }
       }
       h2 {
         position: absolute;
@@ -326,16 +392,26 @@ body {
         left: -73px;
         margin-bottom: 47px;
         text-align: left;
+        @media screen and (max-width: 1420px) {
+          top: -2.4vw;
+          left: -4.8vw;
+        }
         img {
           width: 398px;
           height: auto;
+          @media screen and (max-width: 1420px) {
+            width: 26.5vw;
+          }
         }
         span {
           display: block;
-          font-family: "游明朝", YuMincho, "Hiragino Mincho ProN W3", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+          font-family: "游明朝", "YuMincho", "Hiragino Mincho ProN W3", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
           font-size: 1.4rem;
           font-weight: bold;
           color: #4ace90;
+          @media screen and (max-width: 1160px) {
+            font-size: 1.2rem;
+          }
         }
       }
       .top-info-wrap {
@@ -344,22 +420,40 @@ body {
         padding-top: 75px;
         padding-bottom: 105px;
         background-color: #fff;
+        @media screen and (max-width: 1420px) {
+          margin-left: 3vw;
+          padding-top: 5vw;
+          padding-bottom: 7vw;
+        }
         .top-info {
           position: relative;
           z-index: 1;
           margin-left: 540px;
           color: #00b9b7;
+          @media screen and (max-width: 1420px) {
+            margin-left: 36vw;
+          }
           h3 {
             margin-bottom: 20px;
             img {
               width: 496px;
+              @media screen and (max-width: 1420px) {
+                width: 33vw;
+              }
             }
           }
           h4 {
             line-height: 2.4;
+            @media screen and (max-width: 1160px) {
+              font-size: 1.4rem;
+            }
           }
           p {
             line-height: 2.4;
+            @media screen and (max-width: 1160px) {
+              padding-right: 30px;
+              font-size: 1.4rem;
+            }
           }
         }
         .top-instagram {
@@ -369,7 +463,12 @@ body {
           left: -45px;
           width: 535px;
           height: 370px;
-          background-color: #f4f4f4;
+          @media screen and (max-width: 1420px) {
+            top: -3.1vw;
+            left: -3vw;
+            width: 35vw;
+            height: 24.6vw;
+          }
         }
         .button-link {
           position: absolute;
@@ -377,6 +476,10 @@ body {
           right: 600px;
           bottom: -30px;
           transform: translateX(50%);
+          @media screen and (max-width: 1420px) {
+            right: 40vw;
+            bottom: -2vw;
+          }
           a {
             background-image: linear-gradient( 90deg, rgb(126,75,200) 0%, rgb(232,15,121) 50%, rgb(244,108,105) 83%, rgb(255,201,88) 100%);
           }

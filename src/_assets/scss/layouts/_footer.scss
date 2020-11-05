@@ -9,6 +9,9 @@ footer {
     background-attachment: fixed;
     background-position: center top;
     background-size: 100% auto;
+    @media screen and (max-width: 1420px) {
+      height: 22.6vw;
+    }
     @media screen and (max-width: 1400px) {
       background-attachment: scroll;
       background-position: center bottom;
@@ -20,18 +23,26 @@ footer {
       font-weight: bold;
       list-style: 1;
       color: #fff;
+      @media screen and (max-width: 1420px) {
+        margin-bottom: 3vw;
+        padding-top: 5.3vw;
+      }
+      @media screen and (max-width: 1160px) {
+        font-size: 2rem;
+      }
     }
     .footer-contact-link-wrap {
       font-size: 0;
       .fcl-button {
         display: inline-block;
+        width: 40%;
         vertical-align: top;
         &:first-child {
           margin-right: 25px;
         }
         a {
           display: inline-block;
-          width: 480px;
+          width: 100%;
           font-size: 1.8rem;
           font-weight: bold;
           line-height: 90px;
@@ -39,6 +50,16 @@ footer {
           color: #fff;
           border: solid 1px #fff;
           border-radius: 45px;
+          @media screen and (max-width: 1420px) {
+            line-height: 6vw;
+            border-radius: 3vw;
+          }
+          @media screen and (max-width: 1260px) {
+            font-size: 1.6rem;
+          }
+          @media screen and (max-width: 1060px) {
+            font-size: 1.4rem;
+          }
           &:hover {
             color: #333;
             background-color: #fff;
@@ -48,17 +69,40 @@ footer {
           a {
             height: 90px;
             line-height: 1;
+            @media screen and (max-width: 1420px) {
+              height: 6vw;
+              letter-spacing: 0;
+            }
             span {
               display: block;
               &.no {
                 padding-top: 25px;
                 font-size: 1.8rem;
                 font-weight: bold;
+                @media screen and (max-width: 1420px) {
+                  padding-top: 1.6vw;
+                  padding-top: 1.6vw;
+                }
+                @media screen and (max-width: 1260px) {
+                  font-size: 1.6rem;
+                }
+                @media screen and (max-width: 1060px) {
+                  font-size: 1.4rem;
+                }
               }
               &.note {
                 margin-top: 10px;
                 font-size: 1.4rem;
                 font-weight: normal;
+                @media screen and (max-width: 1420px) {
+                  margin-top: 0.6vw;
+                }
+                @media screen and (max-width: 1260px) {
+                  font-size: 1.2rem;
+                }
+                @media screen and (max-width: 1060px) {
+                  font-size: 1rem;
+                }
               }
             }
           }
@@ -71,5 +115,8 @@ footer {
     padding-bottom: 30px;
     font-size: 1.4rem;
     line-height: 1;
+    @media screen and (max-width: 1260px) {
+      font-size: 1.2rem;
+    }
   }
 }
