@@ -13,18 +13,29 @@
       padding-bottom: 5.6vw;
       background-size: 21.8vw auto;
     }
+    @media screen and (max-width: 768px) {
+      padding-top: 30px;
+      padding-bottom: 60vw;
+      background-position: center bottom;
+      background-size: 40vw auto;
+    }
   }
   h2 {
     margin-bottom: 55px;
     text-align: center;
     @media screen and (max-width: 1420px) {
       margin-bottom: 3.6vw;
+      margin-bottom: 30px;
     }
     img {
       width: 274px;
       height: auto;
       @media screen and (max-width: 1420px) {
         width: 18.2vw;
+      }
+      @media screen and (max-width: 768px) {
+        width: 60%;
+        max-width: 220px;
       }
     }
     span {
@@ -52,6 +63,10 @@
     @media screen and (max-width: 1160px) {
       font-size: 3.2rem;
     }
+    @media screen and (max-width: 768px) {
+      margin-bottom: 20px;
+      font-size: 1.6rem;
+    }
     &:before {
       content: "";
       position: absolute;
@@ -73,6 +88,9 @@
     @media screen and (max-width: 1160px) {
       font-size: 1.4rem;
     }
+    @media screen and (max-width: 768px) {
+      width: 100%;
+    }
   }
   .button-link {
     margin-top: 30px;
@@ -91,6 +109,10 @@
       padding-top: 5vw;
       padding-bottom: 6vw;
     }
+    @media screen and (max-width: 768px) {
+      padding-top: 30px;
+      padding-bottom: 50px;
+    }
   }
   h2 {
     margin-bottom: 55px;
@@ -103,6 +125,10 @@
       height: auto;
       @media screen and (max-width: 1420px) {
         width: 15vw;
+      }
+      @media screen and (max-width: 768px) {
+        width: 50%;
+        min-width: 160px;
       }
     }
     span {
@@ -120,6 +146,9 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    @media screen and (max-width: 768px) {
+      display: block;
+    }
     .profile-image {
       position: relative;
       z-index: 1;
@@ -128,6 +157,10 @@
       @media screen and (max-width: 1420px) {
         width: 30.4vw;
         height: 26.3vw;
+      }
+      @media screen and (max-width: 768px) {
+        width: 100%;
+        height: auto;
       }
       span {
         position: relative;
@@ -139,6 +172,11 @@
           left: -5vw;
           width: 35.4vw;
         }
+        @media screen and (max-width: 768px) {
+          z-index: 1;
+          left: 0;
+          width: 100%;
+        }
       }
       &:after {
         content: "";
@@ -148,12 +186,36 @@
         display: block;
         width: 200px;
         height: 200px;
+        transform:rotate(10deg);
         background-image: linear-gradient( 20deg, rgb(121,193,194) 1%, rgb(161,217,151) 53%, rgb(201,240,107) 81%, rgb(255,243,118) 100%);
         @media screen and (max-width: 1420px) {
           right: -5.4vw;
           bottom: -2.4vw;
           width: 13.3vw;
           height: 13.3vw;
+        }
+        @media screen and (max-width: 768px) {
+          display: none;
+        }
+      }
+      &:before {
+        content: "";
+        position: absolute;
+        right: -175px;
+        bottom: -105px;
+        display: block;
+        width: 85px;
+        height: 85px;
+        transform:rotate(-10deg);
+        background-image: linear-gradient( 35deg, rgb(215,62,159) 12%, rgb(255,244,63) 100%);
+        @media screen and (max-width: 1420px) {
+          right: -10.5vw;
+          bottom: -6.5vw;
+          width: 5vw;
+          height: 5vw;
+        }
+        @media screen and (max-width: 768px) {
+          display: none;
         }
       }
     }
@@ -164,6 +226,11 @@
       @media screen and (max-width: 1420px) {
         width: 47.2vw;
       }
+      @media screen and (max-width: 768px) {
+        z-index: 1;
+        width: 100%;
+        margin-top: 30px;
+      }
       .name {
         margin-bottom: 20px;
         font-family: "游明朝", "YuMincho", "Hiragino Mincho ProN W3", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
@@ -173,12 +240,21 @@
         @media screen and (max-width: 1160px) {
           font-size: 2.2rem;
         }
+        @media screen and (max-width: 768px) {
+          margin-bottom: 15px;
+          font-size: 1.8rem;
+        }
         span {
           display: inline-block;
           margin-left: 10px;
           font-size: 2.4rem;
           @media screen and (max-width: 1160px) {
             font-size: 1.9rem;
+          }
+          @media screen and (max-width: 768px) {
+            display: block;
+            margin-left: 0;
+            font-size: 1.6rem;
           }
         }
       }
@@ -191,6 +267,10 @@
         border-left: solid 2px #06b6b5;
         @media screen and (max-width: 1160px) {
           font-size: 1.4rem;
+        }
+        @media screen and (max-width: 768px) {
+          margin-bottom: 15px;
+          padding-left: 15px;
         }
       }
       p {
@@ -206,6 +286,9 @@
     @media screen and (max-width: 1420px) {
       padding-top: 3.6vw;
     }
+    @media screen and (max-width: 768px) {
+      padding-top: 30px;
+    }
     .result-wrap {
       position: relative;
       display: flex;
@@ -217,6 +300,11 @@
       @media screen and (max-width: 1420px) {
         height: 10vw;
         margin-bottom: 2.3vw;
+      }
+      @media screen and (max-width: 768px) {
+        display: block;
+        height: auto;
+        margin-bottom: 20px;
       }
       .result-title {
         position: relative;
@@ -233,6 +321,13 @@
           margin-top: -1vw;
           margin-left: 1vw;
         }
+        @media screen and (max-width: 768px) {
+          width: 100%;
+          height: auto;
+          margin-top: 0;
+          margin-left: 0;
+          padding-bottom: 15px;
+        }
         h3 {
           padding-top: 50px;
           font-size: 1.8rem;
@@ -242,6 +337,9 @@
           @media screen and (max-width: 1420px) {
             padding-top: 3.3vw;
             font-size: 1.4rem;
+          }
+          @media screen and (max-width: 768px) {
+            padding-top: 20px;
           }
           span {
             display: block;
@@ -262,9 +360,18 @@
         @media screen and (max-width: 1420px) {
           width: 63.6vw;
         }
+        @media screen and (max-width: 768px) {
+          display: block;
+          width: 100%;
+          padding-top: 20px;
+          padding-bottom: 20px;
+        }
         .data-content {
           display: flex;
           justify-content: flex-start;
+          @media screen and (max-width: 768px) {
+            display: block;
+          }
           ul {
             padding-left: 1em;
             line-height: 2;
@@ -277,8 +384,15 @@
               padding-right: 20px;
               font-size: 1.2rem;
             }
+            @media screen and (max-width: 768px) {
+              padding-right: 1em;
+              padding-left: 3em;
+            }
             & + ul {
               margin-left: 20px;
+              @media screen and (max-width: 768px) {
+                margin-left: 0;
+              }
             }
           }
         }

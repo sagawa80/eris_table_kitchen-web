@@ -320,6 +320,7 @@ if (reversed == null) { reversed = false; }
 	// timeline functions:
 	this.frame_119 = function() {
 		this.stop();
+		top_mv_anim_end();
 	}
 
 	// actions tween:
@@ -333,7 +334,7 @@ if (reversed == null) { reversed = false; }
 	this.instance = new lib.enmov();
 	this.instance.setTransform(150,100,1,1,0,0,0,82.3,82.3);
 
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[]}).to({state:[{t:this.en}]},71).to({state:[{t:this.instance}]},47).wait(6));
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[]}).to({state:[{t:this.en}]},71).to({state:[{t:this.instance}]},46).wait(7));
 
 	// フォーク
 	this.instance_1 = new lib.fork("synched",0);
@@ -387,7 +388,7 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 1.00,
 	manifest: [
-		{src:"_assets/images/Path.png", id:"Path"}
+		{src:"/_assets/images/Path.png", id:"Path"}
 	],
 	preloads: []
 };

@@ -245,13 +245,19 @@ gulp.task('revreplace', ['rev'], () => {
 
 gulp.task('copy', () => {
     gulp.src([dir.src + '/_assets/js/jquery-3.5.1.min.js'])
-        .pipe(gulp.dest(dir.dist + '/_assets/js'));
+      .pipe(gulp.dest(dir.dist + '/_assets/js'));
     gulp.src([dir.src + '/_assets/js/script.js'])
-        .pipe(gulp.dest(dir.dist + '/_assets/js'));
+      .pipe(gulp.dest(dir.dist + '/_assets/js'));
     gulp.src([dir.src + '/_assets/js/createjs.min.js'])
       .pipe(gulp.dest(dir.dist + '/_assets/js'));
     gulp.src([dir.src + '/_assets/js/top-anim.js'])
-        .pipe(gulp.dest(dir.dist + '/_assets/js'));
+      .pipe(gulp.dest(dir.dist + '/_assets/js'));
+    gulp.src([dir.src + '/_assets/js/viewport.js'])
+      .pipe(gulp.dest(dir.dist + '/_assets/js'));
+    gulp.src([dir.src + '/_assets/js/three.min.js'])
+      .pipe(gulp.dest(dir.dist + '/_assets/js'));
+    gulp.src([dir.src + '/_assets/js/TweenMax.min.js'])
+      .pipe(gulp.dest(dir.dist + '/_assets/js'));
 });
 
 gulp.task('revision', ['revreplace']);

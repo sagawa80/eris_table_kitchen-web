@@ -2,108 +2,102 @@
 
 footer {
   text-align: center;
-  .footer-contact {
-    height: 340px;
+  .footer-top {
+    height: 320px;
     background-image: url(../images/footer-contact-bg.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center top;
     background-size: 100% auto;
-    @media screen and (max-width: 1420px) {
-      height: 22.6vw;
-    }
-    @media screen and (max-width: 1400px) {
+    @media screen and (max-width: 768px) {
+      height: auto;
+      padding-top: 30px;
+      padding-bottom: 30px;
       background-attachment: scroll;
-      background-position: center bottom;
-    }
-    p {
-      margin-bottom: 45px;
-      padding-top: 80px;
-      font-size: 2.5rem;
-      font-weight: bold;
-      list-style: 1;
-      color: #fff;
-      @media screen and (max-width: 1420px) {
-        margin-bottom: 3vw;
-        padding-top: 5.3vw;
-      }
-      @media screen and (max-width: 1160px) {
-        font-size: 2rem;
-      }
+      background-size: cover;
     }
     .footer-contact-link-wrap {
-      font-size: 0;
+      padding-top: 114px;
+      @media screen and (max-width: 768px) {
+        padding-top: 0;
+      }
+      .footer-contact-desc {
+        display: inline-block;
+        font-size: 2.5rem;
+        font-weight: bold;
+        color: #fff;
+        @media screen and (max-width: 768px) {
+          display: block;
+          font-size: 1.6rem;
+        }
+        @media screen and (max-width: 320px) {
+          font-size: 1.2rem;
+        }
+      }
       .fcl-button {
         display: inline-block;
-        width: 40%;
-        vertical-align: top;
-        &:first-child {
-          margin-right: 25px;
+        margin-left: 60px;
+        @media screen and (max-width: 768px) {
+          display: block;
+          margin-top: 30px;
+          margin-left: 0;
         }
         a {
-          display: inline-block;
-          width: 100%;
+          display: block;
+          width: 400px;
           font-size: 1.8rem;
           font-weight: bold;
-          line-height: 90px;
+          line-height: 75px;
           transition: all .3s linear;
           color: #fff;
-          border: solid 1px #fff;
-          border-radius: 45px;
-          @media screen and (max-width: 1420px) {
-            line-height: 6vw;
-            border-radius: 3vw;
-          }
-          @media screen and (max-width: 1260px) {
-            font-size: 1.6rem;
-          }
-          @media screen and (max-width: 1060px) {
+          border-radius: 38px;
+          background-image: linear-gradient( 90deg, rgb(0,183,184) 1%, rgb(95,213,133) 65%, rgb(190,243,81) 100%);
+          @media screen and (max-width: 768px) {
+            width: 80%;
+            margin-right: auto;
+            margin-left: auto;
             font-size: 1.4rem;
+            line-height: 50px;
+            border-radius: 30px;
           }
           &:hover {
-            color: #333;
-            background-color: #fff;
+            filter: hue-rotate(180deg);
+            @media screen and (max-width: 768px) {
+              filter: none;
+            }
           }
         }
-        &.l2 {
-          a {
-            height: 90px;
-            line-height: 1;
-            @media screen and (max-width: 1420px) {
-              height: 6vw;
-              letter-spacing: 0;
+      }
+    }
+    .footer-sns-links {
+      padding-top: 70px;
+      @media screen and (max-width: 768px) {
+        padding-top: 30px;
+      }
+      .link {
+        display: inline-block;
+        line-height: 1;
+        vertical-align: middle;
+        &:first-child {
+          margin-right: 34px;
+          @media screen and (max-width: 768px) {
+            margin-right: 20px;
+          }
+        }
+        a {
+          display: block;
+          img {
+            transition: opacity .3s linear;
+            &.ig {
+              width: 23px;
             }
-            span {
-              display: block;
-              &.no {
-                padding-top: 25px;
-                font-size: 1.8rem;
-                font-weight: bold;
-                @media screen and (max-width: 1420px) {
-                  padding-top: 1.6vw;
-                  padding-top: 1.6vw;
-                }
-                @media screen and (max-width: 1260px) {
-                  font-size: 1.6rem;
-                }
-                @media screen and (max-width: 1060px) {
-                  font-size: 1.4rem;
-                }
-              }
-              &.note {
-                margin-top: 10px;
-                font-size: 1.4rem;
-                font-weight: normal;
-                @media screen and (max-width: 1420px) {
-                  margin-top: 0.6vw;
-                }
-                @media screen and (max-width: 1260px) {
-                  font-size: 1.2rem;
-                }
-                @media screen and (max-width: 1060px) {
-                  font-size: 1rem;
-                }
-              }
+            &.wc {
+              width: 98px;
+            }
+          }
+          &:hover {
+            img {
+              opacity: 0.8;
             }
           }
         }
@@ -117,6 +111,13 @@ footer {
     line-height: 1;
     @media screen and (max-width: 1260px) {
       font-size: 1.2rem;
+    }
+    @media screen and (max-width: 768px) {
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+    @media screen and (max-width: 340px) {
+      font-size: 0.8rem;
     }
   }
 }

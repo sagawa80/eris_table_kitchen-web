@@ -8,6 +8,7 @@ html(lang="ja")
     meta(name="keywords", content="")
     title レッスンについて | お料理サロン エリズテーブルアンドキッチン
     link(rel="stylesheet", href="../_assets/css/style.css")
+    script(src="../_assets/js/viewport.js")
   body.low.activity
     header#header.low
       .logo
@@ -27,6 +28,11 @@ html(lang="ja")
           li
             a(href="../contact/")
               |CONTACT
+      .hamburger-menu
+        .inner
+          .hamburger-menu-line.line-top
+          .hamburger-menu-line.line-middle
+          .hamburger-menu-line.line-bottom
     #wrapper.wrapper
       .low-mv.activity
         h1 今までの活動
@@ -88,12 +94,6 @@ html(lang="ja")
             .pic
               a(href="#")
                 img(src="../_assets/images/activity-xmas17.jpg" alt="")
-            .pic
-              a(href="#")
-                img(src="../_assets/images/activity-xmas18.jpg" alt="")
-            .pic
-              a(href="#")
-                img(src="../_assets/images/activity-xmas19.jpg" alt="")
           .pics-note
             |※画像をクリックすると大きな画像で見られます
           .button-link
@@ -101,18 +101,20 @@ html(lang="ja")
               |戻る
 
       footer
-        .footer-contact#footer-contact
-          .inner
-            p
+        .footer-top
+          .footer-contact-link-wrap
+            .footer-contact-desc
               |レッスンのご予約、お問い合せはこちら
-            .footer-contact-link-wrap
-              .fcl-button.l2
-                a(href="tel:090-7254-3397")
-                  span.no Tel. 090-7254-3397
-                  span.note  受付時間　10：00〜19：00【月曜〜金曜】
-              .fcl-button
-                a(href="../contact/")
-                  |お問い合せフォーム
+            .fcl-button
+              a(href="../contact/")
+                |お問い合せフォーム
+          .footer-sns-links
+            .link
+              a(href="https://www.instagram.com/eristableandkitchen/" target="_blank")
+                img.ig(src="../_assets/images/ico-instagram-w.png" alt="Instagram")
+            .link
+              a(href="https://eclat.hpplus.jp/hanagumi/miyahara" target="_blank")
+                img.wc(src="../_assets/images/ico-webclat-w.png" alt="Webéchat")
         .copyright
           p Copyright © Eri’s table & kitchen  All rights reserved.
     .pic_detail

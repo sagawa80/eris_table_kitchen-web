@@ -8,6 +8,7 @@ html(lang="ja")
     meta(name="keywords", content="")
     title 当サロンについて | お料理サロン エリズテーブルアンドキッチン
     link(rel="stylesheet", href="../_assets/css/style.css")
+    script(src="../_assets/js/viewport.js")
   body.low.about
     header#header.low
       .logo
@@ -27,6 +28,11 @@ html(lang="ja")
           li
             a(href="../contact/")
               |CONTACT
+      .hamburger-menu
+        .inner
+          .hamburger-menu-line.line-top
+          .hamburger-menu-line.line-middle
+          .hamburger-menu-line.line-bottom
     #wrapper.wrapper
       .low-mv.about
         h1 当サロンについて
@@ -64,15 +70,13 @@ html(lang="ja")
                 br
                 |神奈川県　藤沢市生まれ
               p
-                |短大卒業後、旅行会社勤務を経て大手化粧品メーカーへ転職。
+                |短大卒業後、旅行会社勤務を経て大手化粧品メーカーへ転職。16年間の在職期間中にフラワーアレンジメント、テーブルコーディネ ート、料理、ワインを学び、将来自宅でサロンを開業する夢を持つ。
                 br
-                |営業管理部門にて売上実績把握、社内表彰式のプロデュース経験を経て幹部秘書に従事し、会社の理念でもある"おもてなしの心"を学ぶ。
+                |退職後8年間の専業主婦の間に、インテリアコーディネーター資格を取得、本格的におもてなし料理、テーブルコーディネート、フィ ンガーフード、ホームパーティーについて学び、2019年12月『Eri's tabe & kitchen』をオープン。
                 br
-                |2011年、息子の幼稚園入園を機に退社。
+                |現在、日本ホームパーティー協会認定講師、日本フィンガーフード協会認定講師、Sylph Japan(シルフジャパン)発足のSlyph friends(シルフフレンズメンバー)として各種レッスン開催。
                 br
-                |幼少の頃から料理好きの母や親戚の影響を受け、お客様を招いてお料理を振る舞う事に興味を持つ。
-                br
-                |在職中からフラワーアレンジメント、料理、テーブルコーディネート、ワインを学び、週末には友人を招いておもてなしをしていた経験から、好きな事を仕事にしたいという気持ちが強まり、2019年12月、『Eri's table & kitchen』をオープン。
+                |また、集英社より発刊の女性ファッション誌「eclat」にて読者モデル、公式ブロガーとしても活動中。
           .actual-results
             .result-wrap
               .result-title
@@ -96,8 +100,8 @@ html(lang="ja")
               .result-data
                 .data-content
                   ul
-                    li 《清澤春恵氏 主催》「FOOD&DECO」にてフード・テーブルコーディネータープロ養成コース受講
                     li ヒューマンアカデミークリエイティブフラワー講座（ウェディングフラワーコース）デュプロマ取得
+                    li 《清澤春恵氏 主催》「FOOD&DECO」にてフード・テーブルコーディネータープロ養成コース受講
             .result-wrap
               .result-title
                 h3
@@ -107,24 +111,26 @@ html(lang="ja")
                 .data-content
                   ul
                     li 自宅レッスン
-                    li 《Sylph Japan》シルフフレンズとして外部講師を務める（有明ガーデンにて月１回開催中）
-                    li 企業のテーブルスタイリング　等
-
+                    li 「Sylph Japan」シルフフレンズとして講師を務める(有明ガーデン内とうしょう窯にて月1回開催中)
+                    li 日本ホームパーティー協会 認定講師
+                    li 企業のテーブルスタイリング 等
 
 
       footer
-        .footer-contact#footer-contact
-          .inner
-            p
+        .footer-top
+          .footer-contact-link-wrap
+            .footer-contact-desc
               |レッスンのご予約、お問い合せはこちら
-            .footer-contact-link-wrap
-              .fcl-button.l2
-                a(href="tel:090-7254-3397")
-                  span.no Tel. 090-7254-3397
-                  span.note  受付時間　10：00〜19：00【月曜〜金曜】
-              .fcl-button
-                a(href="../contact/")
-                  |お問い合せフォーム
+            .fcl-button
+              a(href="../contact/")
+                |お問い合せフォーム
+          .footer-sns-links
+            .link
+              a(href="https://www.instagram.com/eristableandkitchen/" target="_blank")
+                img.ig(src="../_assets/images/ico-instagram-w.png" alt="Instagram")
+            .link
+              a(href="https://eclat.hpplus.jp/hanagumi/miyahara" target="_blank")
+                img.wc(src="../_assets/images/ico-webclat-w.png" alt="Webéchat")
         .copyright
           p Copyright © Eri’s table & kitchen  All rights reserved.
     script(src="../_assets/js/jquery-3.5.1.min.js")

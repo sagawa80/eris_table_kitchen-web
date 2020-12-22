@@ -8,6 +8,10 @@
       padding-top: 3vw;
       padding-bottom: 6vw;
     }
+    @media screen and (max-width: 768px) {
+      padding-top: 40px;
+      padding-bottom: 50px;
+    }
   }
   h2 {
     margin-bottom: 50px;
@@ -15,11 +19,18 @@
     @media screen and (max-width: 1420px) {
       margin-bottom: 3.3vw;
     }
+    @media screen and (max-width: 768px) {
+      margin-bottom: 30px;
+    }
     img {
       width: 334px;
       height: auto;
       @media screen and (max-width: 1420px) {
         width: 22.2vw;
+      }
+      @media screen and (max-width: 768px) {
+        width: 60%;
+        min-width: 220px;
       }
     }
     span {
@@ -40,11 +51,18 @@
     @media screen and (max-width: 1420px) {
       margin-bottom: 3vw;
     }
+    @media screen and (max-width: 768px) {
+      font-size: 1.4rem;
+      text-align: left;
+    }
   }
   .fee-note {
     font-size: 1.4rem;
     line-height: 2;
     color: #03b5b5;
+    @media screen and (max-width: 768px) {
+      font-size: 1rem;
+    }
   }
   .lesson-fee-wrap {
     .fee-wrap {
@@ -58,6 +76,10 @@
       @media screen and (max-width: 1420px) {
         height: 10vw;
         margin-bottom: 2.3vw;
+      }
+      @media screen and (max-width: 768px) {
+        display: block;
+        height: auto;
       }
       .fee-title {
         position: relative;
@@ -74,6 +96,12 @@
           margin-top: -1vw;
           margin-left: 1vw;
         }
+        @media screen and (max-width: 768px) {
+          width: 100%;
+          height: auto;
+          margin-top: 0;
+          margin-left: 0;
+        }
         h3 {
           padding-top: 50px;
           font-size: 1.8rem;
@@ -86,6 +114,10 @@
           }
           @media screen and (max-width: 1420px) {
             font-size: 1.2rem;
+          }
+          @media screen and (max-width: 768px) {
+            padding-top: 20px;
+            padding-bottom: 20px;
           }
           span {
             display: block;
@@ -107,6 +139,11 @@
         @media screen and (max-width: 1420px) {
           width: 63.6vw;
         }
+        @media screen and (max-width: 768px) {
+          display: block;
+          width: 100%;
+          padding: 15px;
+        }
         .fee-desc {
           width: 700px;
           font-weight: bold;
@@ -114,6 +151,11 @@
           @media screen and (max-width: 1420px) {
             width: 46.6vw;
             font-size: 1.4rem;
+          }
+          @media screen and (max-width: 768px) {
+            width: 100%;
+            padding-bottom: 10px;
+            font-size: 1.2rem;
           }
           span {
             display: block;
@@ -141,6 +183,17 @@
           @media screen and (max-width: 1200px) {
             font-size: 1.2rem;
           }
+          @media screen and (max-width: 768px) {
+            width: 100%;
+            padding-top: 15px;
+            padding-right: 0;
+            padding-left: 0;
+            font-size: 1.4rem;
+            line-height: 1;
+            text-align: center;
+            border-top: solid 1px #36c3c2;
+            border-left: none;
+          }
           span {
             font-size: 1.4rem;
             font-weight: normal;
@@ -166,6 +219,10 @@
       padding-top: 4vw;
       padding-bottom: 6.6vw;
     }
+    @media screen and (max-width: 768px) {
+      padding-top: 30px;
+      padding-bottom: 50px;
+    }
   }
   h2 {
     margin-bottom: 50px;
@@ -173,11 +230,18 @@
     @media screen and (max-width: 1420px) {
       margin-bottom: 3.3vw;
     }
+    @media screen and (max-width: 768px) {
+      margin-bottom: 30px;
+    }
     img {
       width: 260px;
       height: auto;
       @media screen and (max-width: 1420px) {
         width: 17.3vw;
+      }
+      @media screen and (max-width: 768px) {
+        width: 60%;
+        max-width: 210px;
       }
     }
     span {
@@ -196,6 +260,9 @@
     @media screen and (max-width: 1420px) {
       margin-left: -1.6vw;
     }
+    @media screen and (max-width: 768px) {
+      margin-left: -3%;
+    }
     &:after {
       content: "";
       display: block;
@@ -211,6 +278,11 @@
         width: 25.4vw;
         margin-bottom: 1.6vw;
         margin-left: 1.6vw;
+      }
+      @media screen and (max-width: 768px) {
+        width: 47%;
+        margin-bottom: 20px;
+        margin-left: 3%;
       }
       a {
         position: relative;
@@ -244,6 +316,10 @@
           @media screen and (max-width: 1000px) {
             font-size: 1.2rem;
           }
+          @media screen and (max-width: 768px) {
+            padding: 5px 5px;
+            line-height: 1.6;
+          }
         }
         &:hover {
           img {
@@ -266,6 +342,10 @@
       padding-top: 4.3vw;
       padding-bottom: 6.6vw;
     }
+    @media screen and (max-width: 768px) {
+      padding-top: 40px;
+      padding-bottom: 50px;
+    }
   }
   h2 {
     margin-bottom: 60px;
@@ -273,11 +353,18 @@
     @media screen and (max-width: 1420px) {
       margin-bottom: 4vw;
     }
+    @media screen and (max-width: 768px) {
+      margin-bottom: 30px;
+    }
     img {
       width: 260px;
       height: auto;
       @media screen and (max-width: 1420px) {
         width: 17.3vw;
+      }
+      @media screen and (max-width: 768px) {
+        width: 60%;
+        max-width: 200px;
       }
     }
     span {
@@ -307,6 +394,10 @@
     @media screen and (max-width: 1200px) {
       font-size: 1.6rem;
     }
+    @media screen and (max-width: 768px) {
+      margin-bottom: 10px;
+      padding: 10px;
+    }
   }
   .pics-note {
     padding-top: 7px;
@@ -319,6 +410,11 @@
     @media screen and (max-width: 1200px) {
       font-size: 1.2rem;
     }
+    @media screen and (max-width: 768px) {
+      padding-top: 10px;
+      padding-bottom: 30px;
+      font-size: 1rem;
+    }
   }
   .pics-wrap {
     display: flex;
@@ -329,6 +425,9 @@
     @media screen and (max-width: 1420px) {
       margin-left: -1.2vw;
     }
+    @media screen and (max-width: 768px) {
+      margin-left: -2.3%;
+    }
     .pic {
       width: 225px;
       margin-bottom: 18px;
@@ -337,6 +436,11 @@
         width: 15vw;
         margin-bottom: 1.2vw;
         margin-left: 1.2vw;
+      }
+      @media screen and (max-width: 768px) {
+        width: 31%;
+        margin-bottom: 10px;
+        margin-left: 2.3%;
       }
     }
     & + h4 {
@@ -357,6 +461,10 @@
     @media screen and (max-width: 1200px) {
       font-size: 1.5rem;
     }
+    @media screen and (max-width: 768px) {
+      padding-left: 0;
+      font-size: 1.4re,;
+    }
     &::before {
       content: "";
       position: absolute;
@@ -369,6 +477,9 @@
       @media screen and (max-width: 1420px) {
         top: 0.9vw;
         width: 1.4vw;
+      }
+      @media screen and (max-width: 768px) {
+        display: none;
       }
     }
   }
@@ -392,6 +503,10 @@
     height: 27px;
     cursor: pointer;
     transform: translateX(-50%);
+    @media screen and (max-width: 768px) {
+      width: 20px;
+      height: 20px;
+    }
   }
   .pic-wrap {
     position: absolute;
@@ -406,6 +521,9 @@
     img {
       width: 380px;
       transition: all .5s ease-in-out;
+      @media screen and (max-width: 768px) {
+        width: 80%;
+      }
     }
   }
 }
@@ -431,6 +549,10 @@ body.onpicdetail {
         animation-iteration-count: 1;
         animation-direction: normal;
         animation-fill-mode: forwards;
+        @media screen and (max-width: 768px) {
+          width: 10%;
+          animation-name: pic_detail_scale_sp;
+        }
       }
     }
   }
@@ -445,7 +567,16 @@ body.onpicdetail {
     width: 10px;
   }
   100% {
-    width: 380px;
+    width: 480px;
+  }
+}
+
+@keyframes pic_detail_scale_sp {
+  0% {
+    width: 10%;
+  }
+  100% {
+    width: 80%;
   }
 }
 

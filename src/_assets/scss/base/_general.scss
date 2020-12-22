@@ -18,6 +18,11 @@
     background-attachment: fixed;
     background-size: 100% auto;
   }
+  @media screen and (max-width: 768px) {
+    position: relative;
+    background-position: center top;
+    background-size: cover;
+  }
   h1 {
     display: block;
     padding-top: 170px;
@@ -26,6 +31,12 @@
     font-weight: bold;
     text-align: center;
     color: #fff;
+    @media screen and (max-width: 768px) {
+      position: relative;
+      top: 55%;
+      padding-top: 0;
+      font-size: 1.8rem;
+    }
   }
   &.about {
     background-image: url(../images/about-mv.jpg);
