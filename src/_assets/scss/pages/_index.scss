@@ -253,17 +253,29 @@ body {
         @media screen and (max-width: 1160px) {
           font-size: 3rem;
         }
+        @media screen and (max-width: 768px) {
+          font-size: 2.4rem;
+        }
+        @media screen and (max-width: 340px) {
+          font-size: 2.2rem;
+        }
         span {
           display: block;
           margin-top: 20px;
           font-size: 2rem;
           font-weight: normal;
+          @media screen and (max-width: 768px) {
+            width: 90vw;
+            margin-right: auto;
+            margin-left: auto;
+            font-size: 1.8rem;
+          }
         }
         &.is-show {
           animation-name: top_mv_fade;
-          animation-duration: 1s;
+          animation-duration: 0.6s;
           animation-timing-function: ease-out;
-          animation-delay: 1.8s;
+          animation-delay: 1s;
           animation-iteration-count: 1;
           animation-direction: normal;
           animation-fill-mode: forwards;
@@ -645,7 +657,11 @@ body {
             top: initial;
             left: initial;
             width: 100%;
-            height: auto;
+            height: 60vw;
+          }
+          iframe {
+            width: 100% !important;
+            height: 70vw !important;
           }
         }
         .button-link {

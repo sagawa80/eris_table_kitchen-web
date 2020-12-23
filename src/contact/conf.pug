@@ -41,8 +41,6 @@ html(lang="ja")
           h2
             img(src="../_assets/images/contact-tit.svg" alt="Contact")
             span お問い合わせ
-          p.error
-            |入力されていません。
           form(action="/contact/" method="post" name="cform")
             table
               tr
@@ -50,19 +48,19 @@ html(lang="ja")
                   label.required(for="name")
                     |お名前
                 td
-                  input#name(type="text" name="name")
+                  |___name___
               tr
                 th
                   label.required(for="kana")
                     |フリガナ
                 td
-                  input#kana(type="text" name="kana")
+                  |___kana___
               tr
                 th
                   label.required(for="age")
                     |年齢
                 td
-                  input#age.age(type="text" name="age")
+                  |___age___
                   span.age
                     |歳
               tr
@@ -70,29 +68,25 @@ html(lang="ja")
                   label.required.sex(for="sex")
                     |性別
                 td
-                  input#sex(type="radio" name="sex" checked="checked")
-                  span.sex
-                    |女性
-                  span.sex-note
-                    |※当サロンは女性限定となっております。
+                  |女性
               tr
                 th
                   label.required(for="mail")
                     |メールアドレス
                 td
-                  input#mail(type="text" name="mail")
+                  |___mail___
               tr
                 th
                   label.required(for="tel")
                     |電話番号
                 td
-                  input#tel.tel(type="text" name="tel1")
+                  |___tel1___
                   span.tel
                     |ー
-                  input.tel(type="text" name="tel2")
+                  |___tel2___
                   span.tel
                     |ー
-                  input.tel(type="text" name="tel3")
+                  |___tel3___
               tr
                 th
                   label.required(for="request")
@@ -102,7 +96,7 @@ html(lang="ja")
                     br
                     |ご質問など
                 td
-                  textarea#request(name="request", cols="30", rows="10" placeholder="例）●月●日　プレレッスン希望")
+                  |___request___
               tr
                 th
                   label(for="allergy")
@@ -110,11 +104,13 @@ html(lang="ja")
                     br
                     |苦手な食材など
                 td
-                  textarea#allergy(name="allergy", cols="30", rows="10" placeholder="例）卵アレルギーです")
+                  |___allergy___
           .form-note ※入力必須項目です
           .button-link
+            a.reinput(href="#" onclick="document.getElementById('reinput').value='1';document.cform.submit(); return false;")
+              |修正
             a(href="#" onclick="document.cform.submit(); return false;")
-              |確認画面へ
+              |送信
       footer
         .footer-top
           .footer-contact-link-wrap

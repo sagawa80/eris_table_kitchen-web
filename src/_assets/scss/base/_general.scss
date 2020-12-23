@@ -20,6 +20,8 @@
   }
   @media screen and (max-width: 768px) {
     position: relative;
+    height: 48vw;
+    background-attachment: scroll;
     background-position: center top;
     background-size: cover;
   }

@@ -33,6 +33,20 @@ img {
   vertical-align: bottom;
 }
 
+.sp-br {
+  display: none;
+  @media screen and (max-width: 768px) {
+    display: block;
+  }
+}
+
+.pc-br {
+  display: block;
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+}
+
 #wrapper {
   position: relative;
   transform-origin: 0 0;
@@ -75,6 +89,16 @@ img {
       width: 100%;
       line-height: 50px;
       border-radius: 25px;
+    }
+    &+ a {
+      margin-left: 15px;
+      @media screen and (max-width: 768px) {
+        margin-top: 15px;
+        margin-left: 0;
+      }
+    }
+    &.reinput {
+      background-image: linear-gradient( -90deg, rgb(0,183,184) 1%, rgb(95,213,133) 65%, rgb(190,243,81) 100%);
     }
     &:hover {
       filter: hue-rotate(180deg);
