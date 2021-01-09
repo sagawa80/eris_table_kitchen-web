@@ -282,9 +282,12 @@
       margin-bottom: 25px;
       margin-left: 25px;
       @media screen and (max-width: 1420px) {
-        width: 25.4vw;
+        width: 28.2vw;
         margin-bottom: 1.6vw;
         margin-left: 1.6vw;
+      }
+      @media screen and (max-width: 990px) {
+        width: 28.1vw;
       }
       @media screen and (max-width: 768px) {
         width: 47%;
@@ -440,7 +443,7 @@
       margin-bottom: 18px;
       margin-left: 18px;
       @media screen and (max-width: 1420px) {
-        width: 15vw;
+        width: 16.6vw;
         margin-bottom: 1.2vw;
         margin-left: 1.2vw;
       }
